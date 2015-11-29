@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cliffs Sample</string>
+
+    <string name="press_me">Press Me!</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="set_color">Set Color</string>
+    <string name="go_to_second">Go To Second</string>
+</resources>
