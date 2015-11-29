@@ -43,6 +43,7 @@ public enum CliffsInstance implements AppStateTracker.Callback {
 
     @Override
     public void onApplicationBackgrounded() {
+        CliffsLog.d("application backgrounded");
         if (mAppStateListener != null) {
             mAppStateListener.onBackground();
         }
@@ -62,6 +63,7 @@ public enum CliffsInstance implements AppStateTracker.Callback {
 
     @Override
     public void onApplicationForegrounded() {
+        CliffsLog.d("application foregrounded");
         if (mAppStateListener != null) {
             mAppStateListener.onForeground();
         }
