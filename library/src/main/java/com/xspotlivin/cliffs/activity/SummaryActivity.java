@@ -16,7 +16,8 @@ public abstract class SummaryActivity extends AppCompatActivity {
 
         final String previousScreen = Cliffs.trackScreen(getScreenName());
         if (isSimpleSummary() || mTrackingSummary == null || mTrackingSummary.isReported()) {
-            mTrackingSummary = createSummary(previousScreen);
+            mTrackingSummary = createSummary();
+            mTrackingSummary.setPreviousScreen(previousScreen);
         }
     }
 
@@ -37,6 +38,6 @@ public abstract class SummaryActivity extends AppCompatActivity {
 
     protected abstract boolean isSimpleSummary();
 
-    protected abstract TrackingSummary createSummary(String previousScreen);
+    protected abstract TrackingSummary createSummary();
 
 }

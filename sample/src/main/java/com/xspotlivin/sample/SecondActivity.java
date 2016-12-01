@@ -38,10 +38,8 @@ public class SecondActivity extends SummaryActivity {
     }
 
     @Override
-    protected TrackingSummary createSummary(String lastScreen) {
-        TrackingSummary summary = AnalyticsFacade.getSecondSummary(mStartColor);
-        summary.setPreviousScreen(lastScreen);
-        return summary;
+    protected TrackingSummary createSummary() {
+        return AnalyticsFacade.getSecondSummary(mStartColor);
     }
 
     public void setColorClicked(View view) {

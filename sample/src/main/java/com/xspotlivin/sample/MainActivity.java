@@ -28,10 +28,8 @@ public class MainActivity extends SummaryActivity {
     }
 
     @Override
-    protected TrackingSummary createSummary(String lastScreen) {
-        TrackingSummary summary = AnalyticsFacade.getMainSummary();
-        summary.setPreviousScreen(lastScreen);
-        return summary;
+    protected TrackingSummary createSummary() {
+        return AnalyticsFacade.getMainSummary();
     }
 
     public void pressMeClicked(View view) {
