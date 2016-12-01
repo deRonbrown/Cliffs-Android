@@ -70,11 +70,10 @@ future.
 
 Return the screen name to be associated with this `Activity`.
 
-#### `protected TrackingSummary createSummary(String lastScreen);`
+#### `protected TrackingSummary createSummary();`
 
 Create an instance of the `TrackingSummary` interface (or `AbstractSummary`
-subclass) associated with this `Activity`. The last screen name is passed to set
-the "Previous Screen" attribute on the summary.
+subclass) associated with this `Activity`.
 
 ## Integration
 
